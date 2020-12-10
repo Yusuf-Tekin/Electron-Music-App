@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <title>Hello World!</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline';"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-dark">
+    <center class="mt-5 mx-auto" id="image">
+      <img src="./images/disc.png" class="mt-2" width="150" height="150" />
+    </center>
+    <br />
+    <center class="text-light"><h3 id="name"></h3></center>
+
+    <center class="text-secondary">
+      <span><small id="PlayLength">0</small>/<small id="length">00:00</small></span>
+    </center>
+    <br />
+    <center>
+      <div class="slidecontainer">
+        <input type="range" min="0" value="0" class="slider" id="myRange" />
+      </div>
+    </center>
+    <center>
+      <div class="slidecontainer">
+        <input type="range" min="0" max="100" value="100" class="sound" />
+      </div>
+    </center>
+    <center id="playertool">
+      <i class="fas fa-play" id="play"></i>
+    </center>
+    <center id="playertool">
+      <i class="fas fa-pause" id="pause" hidden></i>
+    </center>
+    <br /><br />
+    <center>
+      <i class="far fa-heart" id="like" title="Şarkı'yı Beğen"></i>
+    </center>
+    <center>
+      <i class="fas fa-heart" hidden id="liked" title="Şarkı'yı Beğendin"></i>
+    </center>
+
+    <script src="./renderer.js"></script>
+  </body>
+</html>
