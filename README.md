@@ -1,1 +1,1 @@
-# Projenize Node.js kurun ve 'npm start' komutunu çalıştırın.
+# Bilgisayarınıza Node.js kurun ve konsolda 'npm start' komutunu çalıştırın.
